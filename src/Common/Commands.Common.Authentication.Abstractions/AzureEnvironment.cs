@@ -99,6 +99,8 @@ namespace Microsoft.Azure.Commands.Common.Authentication.Abstractions
                 BatchEndpointResourceId = AzureEnvironmentConstants.USGovernmentBatchEndpointResourceId,
                 AdTenant = "Common"
             };
+            azureCloud.SetProperty(ExtendedEndpoint.OperationalInsightsEndpoint, AzureEnvironmentConstants.USGovernmentOperationalInsightsEndpoint);
+            azureCloud.SetProperty(ExtendedEndpoint.OperationalInsightsEndpointResourceId, AzureEnvironmentConstants.USGovernmentOperationalInsightsEndpointResourceId);
             var azureGermany = new AzureEnvironment
             {
                 Name = EnvironmentName.AzureGermanCloud,
